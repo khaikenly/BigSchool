@@ -1,7 +1,17 @@
-﻿
+﻿@model BigSchool.Models.Course
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Create";
 }
 
-<h2>Index</h2>
-
+<h2>BigSchool</h2>
+<form>
+    <div class="form-group">
+        @Html.LabelFor(m=>m.Place)
+        @Html.TextBoxFor(m => m.Place, new { @class = "form-control"})
+    </div> 
+    <div class="form-group">
+        @Html.LabelFor(m=>m.DateTime)
+        @Html.TextBoxFor(m => m.DateTime, new { @class = "form-control"})
+    </div>
+</form>
